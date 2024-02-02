@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather forecast</title>
-    <link href="assets/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weekly Weather Dashboard</title>
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
+
 <body>
-    <script href="assets/script.js"></script>
+  <header class="lb3" class="p-4 p-sm-5 mb-4 text-align-center">
+    <h1 class="wwd"> Weekly Weather Dashboard</h1>
+  </header>
+                    <h2>Search for a city:</h2>
+      <form action="" id="search-form">
+        <input type="text" id="city-input" placeholder="Orlando" />
+        <input type="submit" name="" id="search-btn" value="Search" />
+      </form>
+      <hr />
+      <div id="history-container">
+        <ul id="history">
+        </ul>
+      </div>
+     
+    </aside>
+    <section class="display">
+      <div id="current">
+        <h3 id="current-search-term"></h3>
+        <ul>
+          <li>Temp: <span id="current-temp"></span></li>
+          <li>Wind: <span id="current-wind"></span></li>
+          <li>Humidity: <span id="current-humidity"></span></li>
+        </ul>
+      </div>
+      <div class="forecast">
+        <h3>5-Day Forecast:</h3>
+        <div class="boxes" id="forecast-container">
+          <!-- Forecast data will be added here dynamically -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <script src="assets/script.js"></script>
 </body>
+
 </html>

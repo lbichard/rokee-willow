@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 20px;
+}
+
+.wwd {
+    height: 150px;
+    background: url(https://media.istockphoto.com/id/1328920389/photo/lightnings-during-summer-storm.jpg?s=612x612&w=0&k=20&c=IdQOe1cEvw_ZNPNYvyHvaRTh-VddW-8t3nWbYgfrckI=);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 87px;
+    text-align: center;
+    filter: drop-shadow(4px 2px 2px #8a2be2);
+
+}
+header h1 {
+  color: lightslategray;
+  text-align: center;
+  margin: 0;
+  padding: 15px 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul {
+    padding: 0;
+  }
+main section {
+  flex: 0 0 60%;
+}
+main {
+    display: flex;
+    gap: 20px;
+  }
+
+#current {
+  border: 1px solid #111;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+main aside {
+    flex: 0 0 30%;
+  }
+
+#city-input,
+input[type="submit"] {
+  width: 100%;
+  padding: 7px;
+}
+input[type="submit"] {
+  background-color: blueviolet;
+  border: 0;
+  outline: 0;
+  color: white;
+  margin-top: 10px;
+}
+
+ul#history {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#history li {
+  background-color: lightslategray;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+/* boxes */
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.boxes div {
+  flex: 1;
+
+  background-color: blueviolet;
+  color: white;
+  padding-left: 5px;
+}
+
+#current-search-term {
+  display: flex;
+  align-items: center;
+}
